@@ -1,0 +1,18 @@
+INTEGER YEAR
+PRINT*, 'ENTER YEAR'
+READ*, YEAR
+IF(MOD(YEAR, 100).EQ.0) THEN
+    IF(MOD(YEAR, 400).EQ.0) THEN
+        PRINT*, YEAR, 'IS LEAP YEAR'
+        ELSE
+            PRINT*, YEAR, 'IS NOT LEAP YEAR'
+    END IF
+    ELSE
+        IF(MOD(YEAR, 4).EQ.0) THEN
+            PRINT*, YEAR, 'IS LEAP YEAR'
+            ELSE
+                PRINT*, YEAR, 'IS NOT LEAP YEAR'
+        END IF
+END IF
+STOP
+END
